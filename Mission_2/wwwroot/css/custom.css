@@ -1,0 +1,20 @@
+﻿body {
+
+}
+
+/* Allows image to display smaller than native resolution (which is too large) */ 
+img {
+    height: 500px;
+    width: 400px;
+}
+
+/* Custom font size and color for labels */
+label {
+    font-size: 20px;
+    color: darkgreen;
+}
+
+/* Removes list bullets so that it looks nicer */
+li {
+    list-style-type: none;
+}
