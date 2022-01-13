@@ -11,6 +11,34 @@ $("#calculate").click(function () {
             parseInt($("#exams").val()) * .20 +
             parseInt($("#intex").val()) * .10);
 
+    // Assigns the grade to a letter
+    sLetterGrade = "";
+    if (finalGrade >= 94) {
+        sLetterGrade = "A"
+    } else if (finalGrade >= 90) {
+        sLetterGrade = "A-"
+    } else if (finalGrade >= 87) {
+        sLetterGrade = "B+"
+    } else if (finalGrade >= 84) {
+        sLetterGrade = "B"
+    } else if (finalGrade >= 80) {
+        sLetterGrade = "B-"
+    } else if (finalGrade >= 77) {
+        sLetterGrade = "C+"
+    } else if (finalGrade >= 74) {
+        sLetterGrade = "C"
+    } else if (finalGrade >= 70) {
+        sLetterGrade = "C-"
+    } else if (finalGrade >= 67) {
+        sLetterGrade = "D+"
+    } else if (finalGrade >= 64) {
+        sLetterGrade = "D"
+    } else if (finalGrade >= 60) {
+        sLetterGrade = "D-"
+    } else {
+        sLetterGrade = "E"
+    }
+
     // Displays grade to the user after calculation is finished 
-    alert("Final Grade = " + String(finalGrade) + "%");
+    alert("Final Grade Percentage = " + String(finalGrade.toFixed(2)) + "% | Final Letter Grade = " + sLetterGrade);
 })
