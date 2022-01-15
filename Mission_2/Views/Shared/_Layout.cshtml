@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <!-- Adds site icon on tab -->
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+
+    <!-- Imports bootstrap and custom css -->
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <link href="css/custom.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <nav>
+        <a asp-controller="Default" asp-action="Index">Home</a>
+        <a asp-controller="Default" asp-action="GradeCalculator">Grade Calculator</a>
+    </nav>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="lib/jquery/jquery-3.6.0.min.js"></script>
+</body>
+
+</html>

@@ -42,5 +42,3 @@ $("#calculate").click(function () {
     // Displays grade to the user after calculation is finished 
     alert("Final Grade Percentage = " + String(finalGrade.toFixed(2)) + "% | Final Letter Grade = " + sLetterGrade);
 })
-
-// HEYEYEYEYEYE
