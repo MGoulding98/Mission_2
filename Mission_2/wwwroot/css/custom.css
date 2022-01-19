@@ -1,8 +1,7 @@
 ﻿body {
-
 }
 
-/* Allows image to display smaller than native resolution (which is too large) */ 
+/* Allows image to display smaller than native resolution (which is too large) */
 img {
     height: 500px;
     width: 400px;
